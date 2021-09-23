@@ -10,9 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/08f2822b68.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="handlebars.js"></script>
-    <script id="templatePF" type="text/x-handlebars-template">
+    <script id="templateWK" type="text/x-handlebars-template">
       {{#each projects}}
         <article class="work">
           <img class="image" src="{{image}}" alt="{{name}}" />
@@ -28,24 +29,38 @@
         </article>
       {{/each}}
     </script>
-    <script src="https://kit.fontawesome.com/08f2822b68.js" crossorigin="anonymous"></script>
+    <script id="templateSK" type="text/x-handlebars-template">
+      {{#each skills}}
+        <article class="skill" id='skill'>
+          {{#if show}}
+          <i class="{{tools}}"></i>
+            {{else}}
+              <p></p>
+            {{/if}}
+          </section>
+        </article>
+      {{/each}}
+    </script>
+
     <title>Portfolio</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <section class="header">
-          <h1>Fernando Oliveri</h1>
-          <h3>Web Developer</h3>
-        </section>
         <nav class="menu">
           <ul>
-            <li>home</li>
-            <li>works</li>
-            <li>skills</li>
-            <li>contact</li>
+            <li><a href="">home</a></li>
+            <li><a href="">works</a></li>
+            <li><a href="">skills</a></li>
+            <li><a href="">contact</a></li>
           </ul>
         </nav>
+        <div class="header">
+          <section class="titulo">
+            <h1>Fernando Oliveri</h1>
+            <h3>Web Developer</h3>
+          </section>
+        </div>
       </header>
 
       <main class="main">
@@ -67,18 +82,7 @@
 
         <section class="skills" id="skills">
           <h2>skills</h2>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
-          <div><i></i></div>
+          <div id="skill"></div>
         </section>
 
         <section class="contact">

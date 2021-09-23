@@ -1,0 +1,86 @@
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+a {
+  color: #ffffff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #F4F4F4;
+  font-family: 'Roboto', 'Open Sans';
+  font-size: 16px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container header {
+  background-image: url("/img/blueforest2.png");
+  height: 300px;
+}
+
+.container header nav ul {
+  display: flex;
+  justify-content: end;
+}
+
+.container header nav ul li {
+  list-style: none;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+.container header nav ul li a {
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+.container header nav ul li a:hover {
+  color: #fab100;
+}
+
+.container header .header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.container header .header .titulo {
+  border: 1px solid #FFFFFF;
+  padding: 15px 40px;
+  text-align: center;
+}
+
+.container header .header .titulo h1 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.container header .header .titulo h3 {
+  color: #ffffff;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */
