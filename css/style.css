@@ -39,6 +39,7 @@ body {
 .container header {
   background-image: url("/img/blueforest2.png");
   height: 300px;
+  width: 100%;
 }
 
 .container header nav ul {
@@ -82,5 +83,118 @@ body {
   color: #ffffff;
   font-family: 'Open Sans';
   font-weight: 400;
+}
+
+.container main {
+  background-color: #ffffff;
+}
+
+.container main .photo {
+  text-align: center;
+}
+
+.container main .photo img {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  position: relative;
+  margin-top: -4rem;
+}
+
+.container main .about_me {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.container main .about_me h2 {
+  color: #fab100;
+  margin-bottom: 1.25rem;
+}
+
+.container main .about_me p {
+  color: #0b313e;
+}
+
+.container main .works {
+  margin-bottom: 4rem;
+  background-color: #F4F4F4;
+}
+
+.container main .works h2 {
+  text-align: center;
+  color: #fab100;
+  margin-bottom: 1rem;
+}
+
+.container main .works .work img {
+  width: 300px;
+}
+
+.container main .works .work h3 {
+  color: #fab100;
+}
+
+.container main .works .work h5 {
+  color: #8a8986;
+}
+
+.container main .skills {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.container main .skills h2 {
+  color: #fab100;
+  margin-bottom: 1rem;
+}
+
+.container main .skills .skill {
+  margin: 1rem 3rem;
+  display: inline-flex;
+}
+
+.container main .skills .skill i {
+  font-size: 4rem;
+  color: #0b313e;
+}
+
+.container main .contact_me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b313e;
+}
+
+.container main .contact_me h2 {
+  width: 100%;
+  text-align: center;
+  color: #fab100;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container main .contact_me .contact {
+  background-color: #0b313e;
+  font-weight: 300;
+  color: #F4F4F4;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.container main .contact_me .social_media {
+  background-color: #0b313e;
+  color: #F4F4F4;
+  margin-right: 2rem;
+  font-size: 3rem;
+}
+
+.container main .contact_me .social_media i {
+  margin: 0 1rem;
+}
+
+.container main .contact_me .social_media i:hover {
+  color: #fab100;
 }
 /*# sourceMappingURL=style.css.map */

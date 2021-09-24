@@ -38,6 +38,7 @@ body
     header
         background-image: url($hbgi)
         height: 300px
+        width: 100%
         nav
             ul
                 display: flex
@@ -68,6 +69,84 @@ body
                     font-family: 'Open Sans'
                     font-weight: 400
 
+    main
+        background-color: #ffffff
+        .photo
+            text-align: center
+            img
+                width: 100px
+                border-radius: 50%
+                border: 3px solid #ffffff
+                position: relative
+                margin-top: -4rem
+        .about_me
+            margin-top: 1rem
+            margin-bottom: 3rem
+            text-align: center
+            h2
+                color: $colorpri
+                margin-bottom: 1.25rem
+            p
+                color: $colorsec
 
-            
+        .works
+            margin-bottom: 4rem
+            background-color: $colorcua
+            h2
+                text-align: center
+                color: $colorpri
+                margin-bottom: 1rem
+            .work
+                img
+                    width: 300px
+                h3
+                    color: $colorpri
+                h5
+                    color: $colorter
+
+        .skills
+            margin-bottom: 4rem
+            text-align: center
+            h2
+                color: $colorpri
+                margin-bottom: 1rem
+            .skill
+                margin: 1rem 3rem
+                display: inline-flex
+                // flex-wrap: nowrap
+                i
+                    font-size: 4rem
+                    color: $colorsec
+
+        .contact_me
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
+            background-color: $colorsec
+            border
+            h2
+                width: 100%
+                text-align: center
+                color: $colorpri
+                margin-top: 1rem
+                margin-bottom: 2rem
+            .contact
+                background-color: $colorsec
+                font-weight: 300
+                color: $colorcua
+                margin-bottom: 2rem
+                margin-left: 2rem
+            .social_media
+                background-color: $colorsec
+                color: $colorcua
+                margin-right: 2rem
+                font-size: 3rem
+                i
+                    margin: 0 1rem
+                    &:hover
+                        color: $colorpri
+
+
+
 

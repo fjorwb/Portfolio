@@ -64,14 +64,10 @@ const context2 = {
     },
     {
       tools: "fab fa-file-excel",
-      show: true,
+      show: false,
     },
     {
       tools: "fab fa-wordpress",
-      show: true,
-    },
-    {
-      tools: "fab fa-firefox",
       show: true,
     },
   ],
