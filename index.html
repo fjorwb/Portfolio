@@ -90,18 +90,24 @@
 
         <section class="contact_me" id="contact_me">
           <h2>contact me</h2>
+
           <div class="contact_form">
-            <form action="" class="form">
+            <form action="" class="formx" id="form">
               <label for="firstname">First Name</label>
-              <input type="text" id="firstname" class="firstname" placeholder="firstname" />
+              <input type="text" id="firstname" name="firstname" placeholder="first name" required />
               <label for="lastname">Last Name</label>
-              <input type="text" id="lastname" class="lastname" placeholder="last name" />
+              <input type="text" id="lastname" name="lastname" placeholder="last name" required />
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" placeholder="you@mail.com" required />
               <br />
-              <textarea name="message" id="" cols="30" rows="5" placeholder="message"></textarea>
+              <textarea name="message" name="message" cols="30" rows="5" placeholder="message" required></textarea>
               <br />
-              <input class="boton" type="submit" value="Send" />
+              <button type="submit" class="boton">Send</button>
+              <!-- <input class="boton" type="submit" value="Send" /> -->
             </form>
+            <a href="mailto:fjoliveri.wb@gmail.com" id="truc">mail</a>
           </div>
+
           <div class="contact">
             <h3>Fernando Oliveri</h3>
             <h5>ca. Matamoros 127</h5>
@@ -123,5 +129,6 @@
     </div>
     <script src="js/Main.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/sendEmail.js"></script>
   </body>
 </html>

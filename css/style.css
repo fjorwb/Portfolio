@@ -241,18 +241,29 @@ body .container main .contact_me .contact_form form {
 body .container main .contact_me .contact_form form label {
   color: #FFFFFF;
   text-align: left;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.75rem;
 }
 
 body .container main .contact_me .contact_form form input {
   margin-bottom: 1rem;
   line-height: 1.5rem;
+  font-size: 1rem;
 }
 
 body .container main .contact_me .contact_form form .boton {
   margin-top: 1rem;
   width: 20%;
   background-color: #fab100;
+}
+
+body .container main .contact_me .contact_form form .boton:hover {
+  opacity: .7;
+}
+
+body .container main .contact_me .contact_form #truc {
+  display: none;
+  color: blue;
 }
 
 body .container main .contact_me .contact {
