@@ -6,6 +6,54 @@ const context1 = {
       tools: "HTML, CSS, JS",
       show: true,
     },
+    {
+      image: "img/img02.jpg",
+      project: "Café Chanchamayo",
+      tools: "HTML, CSS, JS",
+      show: true,
+    },
+    {
+      image: "img/img03.jpg",
+      project: "Pentagonito Club",
+      tools: "HTML, CSS, JS",
+      show: true,
+    },
+    {
+      image: "img/img04.jpg",
+      project: "Colmar Academy",
+      tools: "HTML, CSS, JS",
+      show: true,
+    },
+    {
+      image: "img/img05.jpg",
+      project: "Fotomatic",
+      tools: "HTML, CSS, JS",
+      show: true,
+    },
+    {
+      image: "img/img06.jpg",
+      project: "Tsunami Coffee",
+      tools: "HTML, CSS, JS",
+      show: true,
+    },
+    {
+      image: "img/img07.jpg",
+      project: "Tea Cozy",
+      tools: "HTML, CSS, JS",
+      show: true,
+    },
+    {
+      image: "img/img08.jpg",
+      project: "WEbstore",
+      tools: "HTML, CSS, JS",
+      show: true,
+    },
+    {
+      image: "img/img09.jpg",
+      project: "Startup",
+      tools: "HTML, CSS, JS",
+      show: true,
+    },
   ],
 };
 

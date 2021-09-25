@@ -10,22 +10,25 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://kit.fontawesome.com/08f2822b68.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <script src="handlebars.js"></script>
     <script id="templateWK" type="text/x-handlebars-template">
       {{#each projects}}
         <article class="work">
-          <img class="image" src="{{image}}" alt="{{name}}" />
-          <section class="details">
-            <h3 class="project">{{this.project}}</h3>
-            <h5 class="tools">{{this.tools}}</h5>
-            {{#if show}}
-              <a href="http://{{url}}"></a>
-            {{else}}
-              <p></p>
-            {{/if}}
-          </section>
+          <div class="work_card">
+            <img class="image" src="{{image}}" alt="{{name}}" />
+            <section class="details">
+              <h3 class="project">{{this.project}}</h3>
+              <h5 class="tools">{{this.tools}}</h5>
+              {{#if show}}
+                <a href="http://{{url}}"></a>
+              {{else}}
+                <p></p>
+              {{/if}}
+            </section>
+          </div>
         </article>
       {{/each}}
     </script>
@@ -46,16 +49,16 @@
   </head>
   <body>
     <div class="container">
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a class="btn" href="#header" id="btn-header">home</a></li>
+          <li><a class="btn" href="#works" id="btn-works">works</a></li>
+          <li><a class="btn" href="#skills" id="btn-skills">skills</a></li>
+          <li><a class="btn" href="#contact_me" id="btn-contact_me">contact</a></li>
+        </ul>
+      </nav>
       <header>
-        <nav class="menu">
-          <ul>
-            <li><a href="">home</a></li>
-            <li><a href="">works</a></li>
-            <li><a href="">skills</a></li>
-            <li><a href="">contact</a></li>
-          </ul>
-        </nav>
-        <div class="header">
+        <div class="header" id="header">
           <section class="titulo">
             <h1>Fernando Oliveri</h1>
             <h3>Web Developer</h3>
@@ -67,7 +70,7 @@
         <div class="photo">
           <img src="img/FJOR Foto.jpg" alt="photo F Oliveri" />
         </div>
-        <section class="about_me">
+        <section class="about_me" id="about_me">
           <h2>about me</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tempore, dolores perspiciatis ut iste illo delectus nihil laborum iusto
@@ -85,8 +88,8 @@
           <div id="skill"></div>
         </section>
 
-        <section class="contact_me">
-          <h2>Contact me</h2>
+        <section class="contact_me" id="contact_me">
+          <h2>contact me</h2>
           <div class="contact">
             <h3>Fernando Oliveri</h3>
             <h5>ca. Matamoros 127</h5>
@@ -104,8 +107,9 @@
           </div>
         </section>
       </main>
+      <footer>copyright</footer>
     </div>
-    <footer>copyright</footer>
     <script src="js/Main.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
