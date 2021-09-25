@@ -11,7 +11,6 @@ h1
 h2
     font-size: 1.8rem
     text-shadow: 1px 1px 2px $colorsec 
-
 h3
     font-size: 1.5rem
     text-shadow: 0.25px 0.25px 1px $colorsec 
@@ -24,7 +23,6 @@ a
     font-size: 1rem
     text-decoration: none
     text-shadow: 1px 1px 2px $colorsec 
-
 
 *
     margin: 0
@@ -41,13 +39,12 @@ body
 
     .container
         width: 1200px
-        height: 3000px
+        height: 3500px
         margin: 0 auto
         text-align: center
         nav
-            width: 1200px
+            width: inherit
             height: 50px
-            display: block
             position: fixed
             cursor: pointer
             margin-top: -40px
@@ -70,8 +67,9 @@ body
                             
 
         header
+            width: inherit
             background-image: url($hbgi)
-            width: 100% 
+            background-size: cover
             height: 400px
             .header
                 margin-top: 40px
@@ -109,6 +107,7 @@ body
                     color: $colorpri
                     margin-bottom: 1.25rem
                 p
+                    padding: 0 1rem
                     color: $colorsec
 
             .works
@@ -130,12 +129,13 @@ body
                     cursor: pointer
                     .work_card
                         margin: 2rem 2rem
-                        width: 100%
+                        // width: 100%
                         text-align: center
                         &:hover
                             opacity: 0.5
                         img
                             width: 300px
+                            margin-bottom: 1rem
                             box-shadow: 2px 1px 10px $colorsec
                         h3
                             color: $colorpri
@@ -152,10 +152,12 @@ body
                     margin-bottom: 1rem
                     line-height: 140px
                 .skill
-                    margin: 0rem 3rem
                     display: inline-flex
+                    justify-content: space-evenly
+                    margin: 0 1rem
                     // flex-wrap: nowrap
                     i
+                        margin: 1rem 1rem
                         font-size: 4rem
                         color: $colorsec
 
@@ -196,5 +198,84 @@ body
             text-align: left
             padding-left: 2rem
             line-height: 200px
+
+// Media Queries
+
+@media(max-width: 1025px)
+    body .container
+        width: 1025px
+        height: 4000px
+
+
+
+@media(max-width: 801px)
+    body .container
+        width: 768px
+        height: 4000px
+
+@media(max-width: 415px)
+    body .container
+        width: 414px
+        height: 8000px
+    body .container main .contact_me
+        justify-content: center
+
+    body .container main .contact_me h2
+        margin-bottom: -1rem
+
+    body .container main .contact_me .contact
+        margin-left: 0
+        text-align: center
+
+    body .container main .contact_me .social_media
+        margin-top: 1rem
+        font-size: 2rem
+        margin-bottom: 1rem
+        margin-right: 0
+
+
+@media(max-width: 376px)
+    body .container
+        width: 376px
+        height: 8000px
+
+    body .container main .contact_me
+        justify-content: center
+
+    body .container main .contact_me h2
+        margin-bottom: -1rem
+
+    body .container main .contact_me .contact
+        margin-left: 0
+        text-align: center
+
+    body .container main .contact_me .social_media
+        margin-top: 1rem
+        font-size: 2rem
+        margin-bottom: 1rem
+        margin-right: 0
+
+
+        
+@media(max-width: 361px)
+    body .container
+        width: 361px
+        height: 8000px
+
+    body .container main .contact_me
+        justify-content: center
+
+    body .container main .contact_me h2
+        margin-bottom: -1rem
+
+    body .container main .contact_me .contact
+        margin-left: 0
+        text-align: center
+
+    body .container main .contact_me .social_media
+        margin-top: 1rem
+        font-size: 2rem
+        margin-bottom: 1rem
+        margin-right: 0
 
 
