@@ -78,7 +78,7 @@ body .container nav ul li a:hover {
 
 body .container header {
   width: inherit;
-  background-image: url("img/blueforest2.png");
+  background-image: url("https://github.com/fjorwb/Portfolio/blob/master/img/blueforest2.png");
   background-size: cover;
   height: 400px;
 }
